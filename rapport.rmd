@@ -1,0 +1,33 @@
+---
+output: pdf_document
+title: Dronerapport
+author: Mats Rimereit, Oliver Ekeland, Markus etternavn
+fontsize: 12pt
+linestretch: 1.5
+bibliography: refs.bib
+csl: APA6.csl
+---
+
+# Sammendrag
+
+# Introduksjon
+
+## Teori
+Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
+En tyngre drone krever derfor mer thrust for å fly.
+Ett høyere thrust til vekt forhold vil gjøre at dronen kan fly fortere.
+Mer thrust får man ved å bruke kraftigere motorer, større propeller og større batteri.
+[@redbull]
+
+# Materialer og metode
+Eksoskjellettet til dronen er laget av 2 hule, runde stål-kosteskaft og en boks av plastikk.
+Disse er malt med svart varmeresistent spraymaling.
+Eksoskjellettet skal tåle opp til 120 grader Celsius før plastikken smelter.
+
+# Resultat
+
+# Diskusjon
+
+# Konklusjon
+
+# Referanser
