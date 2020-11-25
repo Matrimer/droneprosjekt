@@ -11,6 +11,8 @@ csl: APA6.csl
 # Sammendrag
 
 # Introduksjon
+Målet med prosjektet er å finne ut om det er mulig å bygge en drone for hånd som er konkuransedyktig mot en tilsvarende fabrikk produsert Drone og er det verdt det?
+Vi forsøkte å bygge dronen med billigst mulig og veldig tilgjengelige materialer. 
 
 ## Teori
 Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
