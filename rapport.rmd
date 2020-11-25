@@ -1,7 +1,7 @@
 ---
 output: pdf_document
 title: Dronerapport
-author: Mats Rimereit, Oliver Ekeland, Markus etternavn
+author: Mats Rimereit, Oliver Ekeland, Markus Krey
 fontsize: 12pt
 linestretch: 1.5
 bibliography: refs.bib
