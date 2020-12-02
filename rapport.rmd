@@ -15,6 +15,7 @@ Målet med prosjektet er å finne ut om det er mulig å bygge en drone for hånd
 Vi forsøkte å bygge dronen med billigst mulig og veldig tilgjengelige materialer.
 
 # Teori
+Definisjonen på en drone er et flygende fartøy som er ubemannet og som kan fly fjernstyrt eller autonomt. [@snldrone]
 Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
 En tyngre drone krever derfor mer thrust for å fly.
 Ett høyere thrust til vekt forhold vil gjøre at dronen kan fly fortere.
@@ -22,6 +23,9 @@ Mer thrust får man ved å bruke kraftigere motorer, større propeller og størr
 Man kan gjøre dronen lettere ved å velge lettere materialer eller mindre av materialene,
 men dronen må likevel være sterk nok til å tåle alle kreftene som skal virker på dronen.
 [@redbull]
+
+Fabrikk produserte droner er
+
 
 [@afc]
 
