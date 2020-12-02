@@ -2,7 +2,7 @@
 
 ## Ting som skal gjøres:
 
-### Materialer og metode
+### Materialer og Metode
 - typen motorer vi har brukt
 - arduino og elektronikk
 - kontroller
@@ -26,7 +26,7 @@
 - Forskjellige typer motorer som finnes
 - Litt om programmering, kanskje?
 
-### sammendrag
+### Sammendrag
 Skrive sammendrag.
 
 ### Konklusjon
