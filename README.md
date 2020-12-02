@@ -1,11 +1,15 @@
 # droneprosjekt
-**uthevet**
-*kursiv*
 
-## overskrift 2
-- liste
-- liste
+## Ting som skal gjøres:
 
-## overskrift test
-- **uthevet liste**
-- *kursiv liste*
+### sammendrag
+
+### Materialer og metode
+
+### Resultat
+
+### Diskusjon
+
+### Konklusjon
+
+### Teori til diskusjonen

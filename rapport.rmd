@@ -15,7 +15,8 @@ Målet med prosjektet er å finne ut om det er mulig å bygge en drone for hånd
 Vi forsøkte å bygge dronen med billigst mulig og veldig tilgjengelige materialer.
 
 # Teori
-Definisjonen på en drone er et flygende fartøy som er ubemannet og som kan fly fjernstyrt eller autonomt. [@snldrone]
+Definisjonen på en drone er et flygende fartøy som er
+ubemannet og som kan fly fjernstyrt eller autonomt. [@snldrone]
 Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
 En tyngre drone krever derfor mer thrust for å fly.
 Ett høyere thrust til vekt forhold vil gjøre at dronen kan fly fortere.
