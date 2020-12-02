@@ -34,6 +34,8 @@ men dronen må likevel være sterk nok til å tåle alle kreftene som skal virke
 # Materialer og metode
 Eksoskjeletett til dronen er laget av 2 hule, runde stål-kosteskaft og en boks av plastikk.
 Disse er malt med svart varmerresistent spraymaling.
+
+![](bilder/Batteriet har fått bolig.jpg)
 Eksoskjeletett skal tåle opp til 120 grader Celsius før plastikken smelter.
 
 # Resultat
