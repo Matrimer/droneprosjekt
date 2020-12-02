@@ -8,20 +8,26 @@ bibliography: refs.bib
 csl: APA6.csl
 ---
 
+![](bilder/Nærmer seg nå fra en annen vinkel.jpg)
+
+\newpage
 # Sammendrag
 
 # Introduksjon
-Målet med prosjektet er å finne ut om det er mulig å bygge en drone for hånd som er konkurransedyktig mot en tilsvarende fabrikk produsert Drone og er det verdt det?
+Målet med prosjektet er å finne ut om det er mulig å bygge en drone for hånd
+som er konkurransedyktig mot en tilsvarende fabrikk produsert Drone og er det verdt det?
 Vi forsøkte å bygge dronen med billigst mulig og veldig tilgjengelige materialer.
 
 # Teori
-Definisjonen på en drone er et flygende fartøy som er
-ubemannet og som kan fly fjernstyrt eller autonomt. [@snldrone]
+Definisjonen på en drone er et flygende fartøy som er ubemannet.
+Det kan enten være fjernstyrt eller autonomt. [@snldrone]
 
 Thrust er den mekanisk kraften som er generert av motorene til dronen. [@nasathrust]
-Thrusten blir laget av at dronen dytter luft fra seg, og det fører på grunn av Newton's 3. lov til en like stor kraft som skyver dronen i motsatt retning.
+Thrusten blir laget av at dronen dytter luft fra seg,
+og det fører på grunn av Newton's 3. lov til en like stor kraft som skyver dronen i motsatt retning.
 Newtons 3. lov sier at en hver kraft mellom to gjenstander har en lik kraft i motsat retning. [@newtonlov]
-Dette vil si at hvis det virker en kraft fra gjenstand A til gjenstand B vil det virke en like stor kraft fra gjenstand B til gjenstand A, som går i motsat retning. [@nasa-3lov]
+Dette vil si at hvis det virker en kraft fra gjenstand A til gjenstand B vil det virke en like stor kraft fra
+gjenstand B til gjenstand A, som går i motsat retning. [@nasa-3lov]
 
 Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
 En tyngre drone krever derfor mer thrust for å fly.
@@ -31,12 +37,14 @@ Man kan gjøre dronen lettere ved å velge lettere materialer eller mindre av ma
 men dronen må likevel være sterk nok til å tåle alle kreftene som skal virker på dronen.
 [@redbull]
 
-# Materialer og metode
+\newpage
+# Materialer og Metode
 Eksoskjeletett til dronen er laget av 2 hule, runde stål-kosteskaft og en boks av plastikk.
 Disse er malt med svart varmerresistent spraymaling.
+Eksoskjeletett skal tåle opp til 120 grader Celsius før plastikken smelter.
 
 ![](bilder/Batteriet har fått bolig.jpg)
-Eksoskjeletett skal tåle opp til 120 grader Celsius før plastikken smelter.
+Her ser du plast-boksen, kosteskaftet og arduinoen dronen er laget av.
 
 # Resultat
 
@@ -44,4 +52,5 @@ Eksoskjeletett skal tåle opp til 120 grader Celsius før plastikken smelter.
 
 # Konklusjon
 
+\newpage
 # Referanser
