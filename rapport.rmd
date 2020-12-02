@@ -16,7 +16,7 @@ csl: APA6.csl
 # Introduksjon
 Målet med prosjektet er å finne ut om det er mulig å bygge en drone for hånd
 som er konkurransedyktig mot en tilsvarende fabrikk produsert Drone og er det verdt det?
-Vi forsøkte å bygge dronen med billigst mulig og veldig tilgjengelige materialer.
+Vi forsøkte å bygge dronen med billigst mulig med lett tilgjengelige materialer.
 
 # Teori
 Definisjonen på en drone er et flygende fartøy som er ubemannet.
@@ -24,10 +24,10 @@ Det kan enten være fjernstyrt eller autonomt. [@snldrone]
 
 Thrust er den mekanisk kraften som er generert av motorene til dronen. [@nasathrust]
 Thrusten blir laget av at dronen dytter luft fra seg,
-og det fører på grunn av Newton's 3. lov til en like stor kraft som skyver dronen i motsatt retning.
-Newtons 3. lov sier at en hver kraft mellom to gjenstander har en lik kraft i motsat retning. [@newtonlov]
+og det fører på grunn av Newtons 3. lov til en like stor kraft som skyver dronen i motsatt retning.
+Newtons 3. lov sier at en hver kraft mellom to gjenstander har en lik kraft i motsatt retning. [@newtonlov]
 Dette vil si at hvis det virker en kraft fra gjenstand A til gjenstand B vil det virke en like stor kraft fra
-gjenstand B til gjenstand A, som går i motsat retning. [@nasa-3lov]
+gjenstand B til gjenstand A, som går i motsatt retning. [@nasa-3lov]
 
 Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
 En tyngre drone krever derfor mer thrust for å fly.
@@ -46,11 +46,23 @@ Eksoskjeletett skal tåle opp til 120 grader Celsius før plastikken smelter.
 ![](bilder/Batteriet har fått bolig.jpg)
 Her ser du plast-boksen, kosteskaftet og arduinoen dronen er laget av.
 
+\newpage
+Den vanligste måten å sette sammen elektronikk på er ved lodding,
+som er en metode man bruker for å lage elektrisk kontakt mellom elektriske komponenter, og for å feste dem godt sammen.
+For å lodde må man ha en loddebolt og loddetinn, så holder man loddebolten inntil komponentene man skal lodde sammen
+(disse komponentene bør være inntil hverandre), så holder man loddetinnet inntil komponentene så det smelter.
+For å få gode loddinger er det viktig å passe på at loddetinnet renner gjennom hullene hvis man lodder på kretskort
+og at det renner mellom alle trådene inni ledningene når man lodder sammen to ledninger (ledninger surres sammen før de loddes.)
+
+![](bilder/Mats på en god dag.jpg)
+Sånn ser det ut når man lodder.
+
+Dronen er laget av
+
 # Resultat
 
 # Diskusjon
 
 # Konklusjon
 
-\newpage
 # Referanser
