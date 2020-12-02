@@ -19,7 +19,7 @@ Definisjonen på en drone er et flygende fartøy som er
 ubemannet og som kan fly fjernstyrt eller autonomt. [@snldrone]
 
 Thrust er den mekanisk kraften som er generert av motorene til dronen. [@nasathrust]
-Thrusten blir laget av at dronen dytter luft fra seg, og den får på grunn av Newton's 3. lov en kraft som skyver dronen opp med lik kraft som luften blir dyttet ned med.
+Thrusten blir laget av at dronen dytter luft fra seg, og det fører på grunn av Newton's 3. lov til en like stor kraft som skyver dronen i motsatt retning.
 Newtons 3. lov sier at en hver kraft mellom to gjenstander har en lik kraft i motsat retning. [@newtonlov]
 
 Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
