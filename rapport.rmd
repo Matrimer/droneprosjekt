@@ -68,6 +68,14 @@ Den neste, derimot fungerte en stund,
 men dårlige koblinger gjorde at den kortsluttet og gikk opp i røyk.
 Den tredje mottakeren (koblet opp på koblingsbrett) var for å teste om antennene fortsatt fungerte.
 Det gjorde de ikke.
+Etter mer testing, sa den tredje mottakeren "poff!" og gikk opp i røyk.
+Det var brent plastikk under 3,3V regulatoren som er bygd inn i mikrokontrolleren.
+
+Vi testet om mikrokontrolleren (Arduino Nano) fortsatt fungerte.
+Det gjorde den ikke.
+Dette var den siste Arduino Nanoen vi hadde og den neste koblet vi opp på samme måte, men med en Adafruit Pro Trinket,
+som er basert på samme AtMega328 chip-en. Når det var koblet opp, målte vi hvor mange volt som kom fra 3,3V regulatoren, og det var 4,9V.
+Altså fungerte ikke den. Så den ble byttet ut.
 
 # Diskusjon
 Siden eksoskjellettet til dronen tåler ekstreme temperaturer så godt, kan det brukes for eksempel på olje-platformer og i arktiske strøk,

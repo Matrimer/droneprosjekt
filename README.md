@@ -2,6 +2,7 @@
 
 ## Ting som skal gjøres:
 
+
 ### Materialer og Metode
 - typen motorer vi har brukt
 - arduino og elektronikk
