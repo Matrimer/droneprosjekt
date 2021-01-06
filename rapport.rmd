@@ -71,13 +71,13 @@ Det gjorde de ikke.
 
 # Diskusjon
 Siden eksoskjellettet til dronen tåler ekstreme temperaturer så godt, kan det brukes for eksempel på olje-platformer og i arktiske strøk,
-men da må motorene byttes ut til noe som tåler sånne temperaturer. da må motorene byttes ut til noe som tåler sånne temperaturer.
+men da må motorene byttes ut med noe som tåler sånne temperaturer.
 
-Siden mottakeren fungerte, bestemte vi oss for å bestille nye antenner og prøve på nytt.
+Siden den andre mottakeren fungerte, bestemte vi oss for å bestille nye antenner og
+prøve på nytt når den tredje mottakeren ikke fungerte.
 Alt gikk da delvis etter planen.
 "Failure is an option here. If things are not failing you are not innovating." sa @fail.
 Altså innoverer du ikke hvis ting ikke går galt.
-Dette betyr at du ikke innoverer nok hvis ting ikke går galt.
 
 # Konklusjon
 
