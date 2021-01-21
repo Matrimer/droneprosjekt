@@ -23,6 +23,8 @@ Vi valgte å bygge en drone; ikke fordi det er enkelt, men fordi det er vanskeli
 Definisjonen på en drone er et flygende fartøy som er ubemannet.
 Det kan enten være fjernstyrt eller autonomt. [@snldrone]
 
+Det er to måter man kan styre en drone. Det er autopilot eller menneskesktyrt. Vi valgte menneskestyrt fordi vi hadde et begrenset budsjett. Da kan man styre den med ledning eller radiosignal. Det kan være vanskelig å finne en ledning som er lang nok til å gi ønsket rekkevidde. Vi valgte av den grunn å bruke radiosignal.
+
 Thrust er den mekanisk kraften som er generert av motorene til dronen. [@nasathrust]
 Thrusten blir laget av at dronen dytter luft i motsatt retning av dit den skal,
 og det fører på grunn av Newtons 3. lov til en like stor kraft som skyver dronen i motsatt retning av luften.
@@ -58,6 +60,28 @@ Her ser du plast-boksen, kosteskaftet og arduinoen dronen er laget av.
 ![Mats på en god dag](bilder/Mats på en god dag.jpg)
 Her er Mats på en god dag og lodder.
 
+## Utstyr
+Utstryr kontroll:
+- Arduino nano
+- 10µf kondensator
+- 3,3 volt regulator
+- Ledninger, (lurt med flere farger for å lage et system. Vi brukte rød til positiv, svart til jord og resten hvit.)
+- pleksiglass 3mm eller 6mm
+- Limpistol med lim
+- tomme kretskort (Et stort eller  flere små)
+- NRF24 modul
+- blyant
+- metallsag
+- loddebolt
+- loddetinn
+- tre brytere ( en for å skru av og på kontrollen og to for å koble til kanaler).
+- 2 stk xbox joystick ( disse kommer gjerne loddet fast i et lite kreskort, da må det loddes av)
+- pussemaskin
+- ståltråd eller aluminumstråd
+- tokomponent lim
+- Mini b USB kabel
+- potensiometer
+
 # Resultat
 Når vi designet mottakeren, satte vi alle komponentene for nært hverandre på kretskortet,
 og klarte derfor ikke å få gode loddinger uten at ting kortsluttet.
@@ -90,3 +114,25 @@ Altså innoverer du ikke hvis ting ikke går galt.
 # Konklusjon
 
 # Referanser
+
+
+
+
+Designet til kontrollen kan minne om en elektrik guitar. Målet med designet var å lage en kontroll ulik alle andre. Derfor
+gikk vi for skarpe kanter.
+
+Tegnet et design som passet til kretskortene, saget det ut fra pleksiglass og slipte kantene slik de ble glatte.
+Kretkortene ble lagt i ønsket konfigurasjon og festet sammen med lim og aluminiumstråd.
+
+Bilde: kontroll uten komponenter
+
+Loddet alle komponenetene fast på kretskortett. Fulgte dette koblingskjemaet for å lodde ledninger.
+
+Bilde koblingskjema
+
+Recieveren har 7 kanaler. Derfor kan to kanaler gå til 2 av/på brytere. 4 til joysticker og en til potensiometer. Dette er kun forskjellige måter å sku ting av og på. Til våres formål er det kun to joysticker og 4 kanaler vi trenger. Resten kan komme til nytte i et fremtidig prosjekt.
+
+Overførte koden til mikrokontrollen via USB kabel. Testet kontrollen med recieveren koblet til en servo. Alle kanalene fun
+gerte. Dette ble gjennomført før reciever gikk opp i røyk. Limte kretskort fast i pleksiglasset.
+
+	bilde av ferdig kontroll foran og bak
