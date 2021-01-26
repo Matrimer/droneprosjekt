@@ -12,6 +12,9 @@ csl: APA6.csl
 
 \newpage
 # Sammendrag
+Denne rapporten handler om et delvis misslykket forsøk på å bygge en drone.
+Vi reflekterer litt over hvordan man skal bygge en bra drone, hva som gikk galt
+og hvordan vi bygde dronen vår.
 
 # Introduksjon
 Målet med prosjektet er å finne ut om det er mulig å bygge en drone for hånd
@@ -32,6 +35,7 @@ Newtons 3. lov sier at en hver kraft mellom to gjenstander har en lik kraft i mo
 Dette vil si at hvis det virker en kraft fra gjenstand A til gjenstand B vil det virke en like stor kraft fra
 gjenstand B til gjenstand A, som går i motsatt retning. [@nasa-3lov]
 
+\newpage
 Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
 En tyngre drone krever derfor mer thrust for å fly.
 Ett høyere thrust til vekt forhold vil gjøre at dronen kan fly fortere.
@@ -40,6 +44,13 @@ Man kan gjøre dronen lettere ved å velge lettere materialer eller mindre av ma
 men dronen må likevel være sterk nok til å tåle alle kreftene som skal virker på dronen.
 [@redbull]
 
+På en drone er det best om massepunktet er lavt.
+Det vil si det tyngste punktet på dronen.
+Den forenklede forklaringen er at det er punktet på dronen som tyngdekraften virker på.
+Hvis Man tenker seg at man skal hoppe ut av et fly mens man holder en stor stein over hodet,
+vil det være mye vanskeligere å lande med beina først enn om man holdt steinen med beina.
+Den tyngste delen vil alltid helst være nederst. Da er det enklere å holde balansen.
+
 Den vanligste måten å sette sammen elektronikk på er ved lodding,
 som er en metode man bruker for å lage elektrisk kontakt mellom elektriske komponenter, og for å feste dem godt sammen.
 For å lodde må man ha en loddebolt og loddetinn, så holder man loddebolten inntil komponentene man skal lodde sammen
@@ -47,21 +58,88 @@ For å lodde må man ha en loddebolt og loddetinn, så holder man loddebolten in
 For å få gode loddinger er det viktig å passe på at loddetinnet renner gjennom hullene hvis man lodder på kretskort
 og at det renner mellom alle trådene inni ledningene når man lodder sammen to ledninger (ledninger surres sammen før de loddes.)
 
+![Mats på en god dag](bilder/Mats på en god dag.jpg){width="50%"}
 
+Mottakeren har 7 kanaler. Derfor kan to kanaler gå til 2 av/på brytere.
+4 kanaler kan gå til to joysticker og en kanal til et potensiometer. Dette er kun forskjellige metoder for å sende signaler til dronen.
+Potensiometeret er som en (lysbryter med dimmer.)
 
 # Materialer og Metode
-Eksoskjeletett til dronen er laget av 2 hule, runde stål-kosteskaft og en boks av plastikk.
+For å få til et lavt massesenter, bestemte vi oss for å plassere batteriet lavest mulig.
+Dette gjorde vi ved å la krysset være inni øverste delen av en plastboks.
+Det ble kuttet hull i sidene til boksen som man kunne stikke røret gjennom.
+![](bilder/Batteriet har fått bolig.jpg)
+
+\newpage
+## Dronekontrollen:
+For å lage dronekontrollen
+tegnet vi et design som passet til kretskortene og
+sagde det ut fra pleksiglass og slipte kantene slik de ble glatte.
+Kretkortene ble lagt i ønsket konfigurasjon og festet sammen med lim og aluminiumstråd.
+
+![](bilder/Limt sammen kretsskort.jpg){width="60%"}
+
+Vi overførte test-koden til mikrokontrollen via en USB kabel og testet kontrollen med recieveren koblet til en servo.
+Etter det ble kretskortene limt fast til pleksiglasset, og kontrolleren ble til.
+I tilleg ble alle komponentene loddet fast på kretskortet.
+
+![nesten ferdig](bilder/Nesten ferdig kontroll.jpg){width="35%"} ![kabelsalat](bilder/Kabelsalat.jpg){width="65%"}
+
+
+## Miniheisekran
+
+Det ble satt sammen en enkel firkantet treramme uten bunn. I bunnen ble det skudd fast to små planker til å holde kranen oppe. Kraneen var kun inprovisering og ingen mål ble tatt. Om kranen er skjev, vil fortsatt motoren henge beint. I midten på toppen av rammen ble det drillet et hull og ved siden av hullet ble det limt fast en servo. En servo er en elektrisk motor med girkasse. Knyttet tråden fast i servoen og tredde den gjennom hullet. Knyttet motoren til andre enden av tråden. Ved å vri på servoen kan man stille høyden til motoren. Servoen trenger ikke å styres med strøm. Hensikten med servoen var at man kan vri på den uten at den spinner tilbake når den møter litt motstand
+**Bilde kran**
+![](bilder/Motor heis.jpg)
+
+\newpage
+## Ekso-skjeletet
+Ekso-skjeletet til dronen er laget av 2 hule, runde stål-kosteskaft og en boks av plastikk.
 Disse er malt med svart varmerresistent spraymaling.
 Eksoskjeletett skal tåle opp til 120 grader Celsius før plastikken smelter, og den tåler temperaturer så lave som -40 grader Celsius.
 
 ![](bilder/Batteriet har fått bolig.jpg)
+
 Her ser du plast-boksen, kosteskaftet og arduinoen dronen er laget av.
 
-![Mats på en god dag](bilder/Mats på en god dag.jpg)
-Her er Mats på en god dag og lodder.
+\newpage
+Dronen er selvdesignet. Ved å legge metalrørene oppå hverandre i kryss istedenfor å for å ha 4 separate armer,
+reduserer man antall deler og får en mer solid drone. For å unngå betydelig høydeforskjell på armene ble midten av hvert rør most flat med en tang.
 
+![](bilder/torturert kosteskaft.jpg){width="80%"}
+
+Når rørene var i riktig konfigurasjon, ble tek7 brukt rundt hullene for å feste armene til boksen.
+Den orginale planen var å bruke muttere og bolter til å holde rørene sammen,
+men etter at plastboken ble en del av struturen, var dronen solid nok til at det holdt med plastboksen og tek7 til å holde dronen sammen.
+Ved å bruke en plastboks slik, kan bateriet være inne i boksen som den nederste delen.
+Nå har dronen et lavt center av masse. På grunn av boksen, hadde vi en flate oppå lokket som gjor det enkelt å montere elektronikken.
+Det ble kuttet en luke i enden av boksen der man enkelt kan ta batteriet inn og ut.
+Den ekstra plassen i boksen gir rom for fremtidige oppgraderinger til større batteri.
+
+Det var planlagt å ha bein på dronen. Dette ble ikke nødvendig fordi boksen er stor nok til at dronen bikker opp igjen på boksen dersom den skulle lande skjevt.
+Boksen er hard og kan derfor knuse. Siden løsningen med minst masse er å lande med boksen først, ble boksen utstyrt med dempende skum. Skummet er lett og mykt.
+
+## Festing av motorer
+Designet hadde en utfordring. Motorenene er laget for å monteres på en flat overflate.
+Derfor måtte hver ende av armene skvises flat i enden, siden dette er rør.
+Disse områdene ble ikke riktig fordi motoren ikke pekte rett opp fra bakken.
+Om en av motorene peker litt annen retning enn de andre, vil dronen drifte bortover når man vil fly rett opp.
+Det første forsøket på å løse dette problemet var å henge motoren i en snor.
+Det går et lite hull i spissen på motoren med ukjent hensikt. Siden motoren er symetrisk, skulle den i teorien henge i vater,
+uansett hva man henger snoren i. Planen var å la det være en klump med tokomponent epoxy lim på hver av endene på armene til dronen.
+Deretter heise motoren forsiktig ned til den såvidt treffer limen. Da kan man forsterke med mer lim etterpå. Dette ble løst ved å bygge en manuel mini heisekran.
+Denne løsningen gikk ikke som planlagt. Tre tykke ledninger stakk ut fra motoren slik at den ikke hang beint. Det var ikke forutsatt.
+
+Løsningen ble å plasere dronen på en vatret overflate.
+Deretter teipe flate plastbiter rund hver av endene på dronens armer.
+Da kunne limen flyte i vater mens plastbitene hindret limen i å renne ned fra armene.
+limen ble pusset slik at mer lim ville sitte bedre. Da var det flatt overflate og mulig å lime motorene fast oppå.
+Om løsningen var bra nok til at dronen flyr riktig gjenstår å se.
+
+\newpage
 ## Utstyr
-Utstryr kontroll:
+
+### Utstryr kontroll: ###
 - Arduino nano
 - 10µf kondensator
 - 3,3 volt regulator
@@ -73,7 +151,7 @@ Utstryr kontroll:
 - blyant
 - metallsag
 - loddebolt
-- loddetinn
+- loddetinn (med flussmiddel)
 - tre brytere ( en for å skru av og på kontrollen og to for å koble til kanaler).
 - 2 stk xbox joystick ( disse kommer gjerne loddet fast i et lite kreskort, da må det loddes av)
 - pussemaskin
@@ -82,7 +160,17 @@ Utstryr kontroll:
 - Mini b USB kabel
 - potensiometer
 
+\newpage
+### Utstyr miniheisekran:
+- Treplanker, alt går
+- Servo(I dette tilfellet ble det brukt SG90 servo, men andre tilsvarende kan brukes.)
+- Tråd
+- Lim
+- Skruer
+
 # Resultat
+Kontrollen fungerte som den skulle, inkludert alle kanalene, men etter litt testing kortsluttet den og sluttet å fungere.
+
 Når vi designet mottakeren, satte vi alle komponentene for nært hverandre på kretskortet,
 og klarte derfor ikke å få gode loddinger uten at ting kortsluttet.
 Denne mottakeren gikk opp i flammer og utløste brannalarmen
@@ -98,12 +186,34 @@ Det var brent plastikk under 3,3V regulatoren som er bygd inn i mikrokontrollere
 Vi testet om mikrokontrolleren (Arduino Nano) fortsatt fungerte.
 Det gjorde den ikke.
 Dette var den siste Arduino Nanoen vi hadde og den neste koblet vi opp på samme måte, men med en Adafruit Pro Trinket,
-som er basert på samme AtMega328 chip-en. Når det var koblet opp, målte vi hvor mange volt som kom fra 3,3V regulatoren, og det var 4,9V.
+som er basert på samme AtMega328 chip-en.
+Når det var koblet opp,
+målte vi hvor mange volt som kom fra 3,3V regulatoren, og det var 4,9V.
 Altså fungerte ikke den. Så den ble byttet ut.
 
+Adafruit Pro Trinket mikrokontrolleren fungerte ikke,
+det er ingen tegn på hvorfor den ikke fungerte.
+
+\newpage
+Her er den så godt som ferdige dronen:
+
+![](bilder/ca-ferdig-drone.png)
+
 # Diskusjon
-Siden eksoskjellettet til dronen tåler ekstreme temperaturer så godt, kan det brukes for eksempel på olje-platformer og i arktiske strøk,
-men da må motorene byttes ut med noe som tåler sånne temperaturer.
+![](bilder/kost.png){width="50%"}
+
+Avgjørelsen for mariale ble tatt etter oliver en vakker dag kostet gulvet.
+Han oppdaget at metallrøret som var igjen dersom man fjenet håndtak og børste veide svært lite og var sterkt.
+Da ble det funnet ut at metallet er magnetisk og må derfor være en type stål.
+Selv om plastik veier mindre, har det et lavere styrke til vekt forhold. Det vil si at man måtte brukt mer plastikk for å oppnå samme styrke.
+Veggene i stålrøret er ekstremt tynne og veier derfor mindre enn et tilsvarennde plastrør.
+Man kunne poteniselt brukt et annet design for å bygge en i plast som hadde veid mindre,
+men da er man avhengig av å kunne forme plastikken selv. Karbonfiber ville være et bedre alternativ, men kostnaden er for høy.
+Til våres formål er det kun to joysticker og 4 kanaler vi trenger, men resten kan komme til nytte i et fremtidig prosjekt.
+
+Siden eksoskjellettet til dronen tåler ekstreme temperaturer så godt,
+kan det for eksempel brukes på olje-platformer og i arktiske strøk,
+men da må motorene byttes ut med noe som tåler de temperaturene.
 
 Siden den andre mottakeren fungerte, bestemte vi oss for å bestille nye antenner og
 prøve på nytt når den tredje mottakeren ikke fungerte.
@@ -111,28 +221,20 @@ Alt gikk da delvis etter planen.
 "Failure is an option here. If things are not failing you are not innovating." sa @fail.
 Altså innoverer du ikke hvis ting ikke går galt.
 
+Målet med designet av kontrolleren var å lage den ulik alle andre. Derfor valgte vi å designe den med skarpe kanter så den skulle minne om en elektrisk gitar.
+
+Etter å ha brent gjennom flere mikrokontrollere i forsøk på å lage en mottaker som ikke ville kortslutte,
+hadde vi ikke igjen flere brukbare mikrokontrollere av samme typen.
+Vi kunne ha prøvd med en ATMEL ATMEGA 328P brikke, det burde fungere,
+men det er også mye tidkrevende arbeid, med feilsøking og utforsking. Derfor ga vi oss her.
+Selv om dronen ikke flyr har det vært et gøy og veldig lærerikt prosjekt.
+Vi tror at vi kan få dronen til å fly med en del mer tid og arbeid,
+men uansett om dronen flyr eller ikke tar vi med oss mye nyttig kunnskap som kommer til å bli nyttig i framtidige prosjekter.
+
 # Konklusjon
+Dronen flyr ikke, og er derfor ikke sammenlignbar med en lignende produktkjøpt drone.
+Å bygge en drone selv gir likevell nyttig kunskap og erfaring og
+er et veldig gøy prosjekt hvis man ser etter en utfordring.
 
+\newpage
 # Referanser
-
-
-
-
-Designet til kontrollen kan minne om en elektrik guitar. Målet med designet var å lage en kontroll ulik alle andre. Derfor
-gikk vi for skarpe kanter.
-
-Tegnet et design som passet til kretskortene, saget det ut fra pleksiglass og slipte kantene slik de ble glatte.
-Kretkortene ble lagt i ønsket konfigurasjon og festet sammen med lim og aluminiumstråd.
-
-Bilde: kontroll uten komponenter
-
-Loddet alle komponenetene fast på kretskortett. Fulgte dette koblingskjemaet for å lodde ledninger.
-
-Bilde koblingskjema
-
-Recieveren har 7 kanaler. Derfor kan to kanaler gå til 2 av/på brytere. 4 til joysticker og en til potensiometer. Dette er kun forskjellige måter å sku ting av og på. Til våres formål er det kun to joysticker og 4 kanaler vi trenger. Resten kan komme til nytte i et fremtidig prosjekt.
-
-Overførte koden til mikrokontrollen via USB kabel. Testet kontrollen med recieveren koblet til en servo. Alle kanalene fun
-gerte. Dette ble gjennomført før reciever gikk opp i røyk. Limte kretskort fast i pleksiglasset.
-
-	bilde av ferdig kontroll foran og bak
