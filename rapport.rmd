@@ -1,7 +1,7 @@
 ---
 output: pdf_document
 title: Dronerapport
-author: Mats Rimereit, Oliver Ekeland, Markus Krey
+author: Mats Rimereit, Oliver Ekeland, Markus Krey ^[in absentia]
 fontsize: 12pt
 linestretch: 1.5
 bibliography: refs.bib
@@ -12,44 +12,54 @@ csl: APA6.csl
 
 \newpage
 # Sammendrag
-Denne rapporten handler om et delvis misslykket forsøk på å bygge en drone.
-Vi reflekterer litt over hvordan man skal bygge en bra drone, hva som gikk galt
+Denne rapporten handler om et forsøk på å bygge en drone.
+Vi reflekterer litt over hvordan man skal bygge en bra drone, hva som kan gå galt
 og hvordan vi bygde dronen vår.
 
 # Introduksjon
 Målet med prosjektet er å finne ut om det er mulig å bygge en drone for hånd
-som er konkurransedyktig mot en tilsvarende fabrikk produsert Drone og er prisen og arbeidet verdt det?
+som er konkurransedyktig mot en tilsvarende fabrikk-produsert drone.
+Er det verdt arbeidet og pengene?
 Vi forsøkte å bygge dronen billigst mulig med lett tilgjengelige materialer.
-Vi valgte å bygge en drone; ikke fordi det er enkelt, men fordi det er vanskelig.
+Vi valgte å bygge en drone; ikke fordi det er enkelt, men fordi det er vanskelig!
 
 # Teori
 Definisjonen på en drone er et flygende fartøy som er ubemannet.
 Det kan enten være fjernstyrt eller autonomt. [@snldrone]
 
-Det er to måter man kan styre en drone. Det er autopilot eller menneskesktyrt. Vi valgte menneskestyrt fordi vi hadde et begrenset budsjett. Da kan man styre den med ledning eller radiosignal. Det kan være vanskelig å finne en ledning som er lang nok til å gi ønsket rekkevidde. Vi valgte av den grunn å bruke radiosignal.
+Det er to måter å styre en drone: autonom og menneskestyrt.
+Vi valgte menneskestyrt fordi vi hadde et begrenset budsjett og autonome droner er både dyrt og vanskelig å lage.
+En menneskestyrt drone kan enten styres med en ledning eller med radiosignaler.
+Det kan være vanskelig å finne en ledning som er lang nok til å gi ønsket rekkevidde,
+så vi valgte av den grunn å bruke radiosignaler.
 
-Thrust er den mekanisk kraften som er generert av motorene til dronen. [@nasathrust]
+Thrust er den mekaniske kraften som er generert av motorene til dronen. [@nasathrust]
 Thrusten blir laget av at dronen dytter luft i motsatt retning av dit den skal,
 og det fører på grunn av Newtons 3. lov til en like stor kraft som skyver dronen i motsatt retning av luften.
-Newtons 3. lov sier at en hver kraft mellom to gjenstander har en lik kraft i motsatt retning. [@newtonlov]
+Newtons 3. lov sier at en hver kraft mellom to gjenstander har en lik kraft i motsatt retning. [@newtonlov; @nasa-3lov]
 Dette vil si at hvis det virker en kraft fra gjenstand A til gjenstand B vil det virke en like stor kraft fra
 gjenstand B til gjenstand A, som går i motsatt retning. [@nasa-3lov]
 
 \newpage
 Hvis en drone skal fly, må den ha et positivt thrust til vekt forhold.
-En tyngre drone krever derfor mer thrust for å fly.
-Ett høyere thrust til vekt forhold vil gjøre at dronen kan fly fortere.
-Mer thrust får man ved å bruke kraftigere motorer, større propeller og større batteri.
+En tyngre drone krever derfor mer thrust for å fly, og
+et høyere thrust til vekt forhold vil gjøre at dronen kan fly fortere.
+Man får mer thrust ved å bruke kraftigere motorer, større propeller og større batteri.
 Man kan gjøre dronen lettere ved å velge lettere materialer eller mindre av materialene,
 men dronen må likevel være sterk nok til å tåle alle kreftene som skal virker på dronen.
 [@redbull]
 
-På en drone er det best om massepunktet er lavt.
-Det vil si det tyngste punktet på dronen.
-Den forenklede forklaringen er at det er punktet på dronen som tyngdekraften virker på.
+På en drone er det best om tyngdepunktet er lavt,
+det vil si det tyngste punktet på dronen.
+Den forenklede forklaringen er at det er punktet på dronen som tyngdekraften virker på. [@tyngdepunkt]
 Hvis Man tenker seg at man skal hoppe ut av et fly mens man holder en stor stein over hodet,
-vil det være mye vanskeligere å lande med beina først enn om man holdt steinen med beina.
-Den tyngste delen vil alltid helst være nederst. Da er det enklere å holde balansen.
+vil det være mye vanskeligere å lande med beina først enn om man holdt steinen ved beina.
+Den tyngste delen vil alltid helst være nederst, da er det enklere å holde balansen.
+
+
+# Materialer og Metode
+
+![Mats på en god dag](bilder/Mats på en god dag.jpg){width="60%"}
 
 Den vanligste måten å sette sammen elektronikk på er ved lodding,
 som er en metode man bruker for å lage elektrisk kontakt mellom elektriske komponenter, og for å feste dem godt sammen.
@@ -58,61 +68,51 @@ For å lodde må man ha en loddebolt og loddetinn, så holder man loddebolten in
 For å få gode loddinger er det viktig å passe på at loddetinnet renner gjennom hullene hvis man lodder på kretskort
 og at det renner mellom alle trådene inni ledningene når man lodder sammen to ledninger (ledninger surres sammen før de loddes.)
 
-![Mats på en god dag](bilder/Mats på en god dag.jpg){width="50%"}
 
-Mottakeren har 7 kanaler. Derfor kan to kanaler gå til 2 av/på brytere.
-4 kanaler kan gå til to joysticker og en kanal til et potensiometer. Dette er kun forskjellige metoder for å sende signaler til dronen.
-Potensiometeret er som en (lysbryter med dimmer.)
 
-# Materialer og Metode
-For å få til et lavt massesenter, bestemte vi oss for å plassere batteriet lavest mulig.
-Dette gjorde vi ved å la krysset være inni øverste delen av en plastboks.
-Det ble kuttet hull i sidene til boksen som man kunne stikke røret gjennom.
-![](bilder/Batteriet har fått bolig.jpg)
-
-\newpage
 ## Dronekontrollen:
 For å lage dronekontrollen
 tegnet vi et design som passet til kretskortene og
 sagde det ut fra pleksiglass og slipte kantene slik de ble glatte.
-Kretkortene ble lagt i ønsket konfigurasjon og festet sammen med lim og aluminiumstråd.
+Kretskortene ble lagt i ønsket konfigurasjon og festet sammen med lim og aluminiumstråd.
 
-![](bilder/Limt sammen kretsskort.jpg){width="60%"}
-
-Vi overførte test-koden til mikrokontrollen via en USB kabel og testet kontrollen med recieveren koblet til en servo.
-Etter det ble kretskortene limt fast til pleksiglasset, og kontrolleren ble til.
-I tilleg ble alle komponentene loddet fast på kretskortet.
-
-![nesten ferdig](bilder/Nesten ferdig kontroll.jpg){width="35%"} ![kabelsalat](bilder/Kabelsalat.jpg){width="65%"}
-
-
-## Miniheisekran
-
-Det ble satt sammen en enkel firkantet treramme uten bunn. I bunnen ble det skudd fast to små planker til å holde kranen oppe. Kraneen var kun inprovisering og ingen mål ble tatt. Om kranen er skjev, vil fortsatt motoren henge beint. I midten på toppen av rammen ble det drillet et hull og ved siden av hullet ble det limt fast en servo. En servo er en elektrisk motor med girkasse. Knyttet tråden fast i servoen og tredde den gjennom hullet. Knyttet motoren til andre enden av tråden. Ved å vri på servoen kan man stille høyden til motoren. Servoen trenger ikke å styres med strøm. Hensikten med servoen var at man kan vri på den uten at den spinner tilbake når den møter litt motstand
-**Bilde kran**
-![](bilder/Motor heis.jpg)
+![kretskortkonfigurasjon](bilder/Limt sammen kretsskort.jpg){width="60%"}
 
 \newpage
+Vi overførte test-koden til mikrokontrollen via en USB kabel og testet kontrollen
+med mottaker koblet til en servo.
+Etter det ble kretskortene limt fast til pleksiglasset, og kontrolleren ble til.
+I tillegg ble alle komponentene loddet fast på kretskortet.
+
+![Alien Technology](bilder/Nesten ferdig kontroll.jpg){width="25%"}
+![Kabelsalat](bilder/Kabelsalat.jpg){width="45%"}
+
+
 ## Ekso-skjeletet
 Ekso-skjeletet til dronen er laget av 2 hule, runde stål-kosteskaft og en boks av plastikk.
 Disse er malt med svart varmerresistent spraymaling.
 Eksoskjeletett skal tåle opp til 120 grader Celsius før plastikken smelter, og den tåler temperaturer så lave som -40 grader Celsius.
 
-![](bilder/Batteriet har fått bolig.jpg)
+![plast-boks, kosteskaft og arduino](bilder/Batteriet har fått bolig.jpg)
 
 Her ser du plast-boksen, kosteskaftet og arduinoen dronen er laget av.
 
-\newpage
-Dronen er selvdesignet. Ved å legge metalrørene oppå hverandre i kryss istedenfor å for å ha 4 separate armer,
-reduserer man antall deler og får en mer solid drone. For å unngå betydelig høydeforskjell på armene ble midten av hvert rør most flat med en tang.
+For å få til et lavt tyngdepunkt, bestemte vi oss for å plassere batteriet lavest mulig.
+Dette gjorde vi ved å la krysset være inni øverste delen av en plastboks.
+Det ble kuttet hull i sidene til boksen som man kunne stikke røret gjennom.
 
-![](bilder/torturert kosteskaft.jpg){width="80%"}
+\newpage
+Dronen er selvdesignet. Ved å legge metallrørene på hverandre så de lagde et kryss istedenfor å for å ha 4 separate armer,
+reduserer man antall deler og får en mer solid drone.
+For å unngå betydelig høydeforskjell på armene ble midten av hvert rør most flat med en tang.
+
+![Torturert Kosteskaft](bilder/torturert kosteskaft.jpg){width="70%"}
 
 Når rørene var i riktig konfigurasjon, ble tek7 brukt rundt hullene for å feste armene til boksen.
-Den orginale planen var å bruke muttere og bolter til å holde rørene sammen,
-men etter at plastboken ble en del av struturen, var dronen solid nok til at det holdt med plastboksen og tek7 til å holde dronen sammen.
-Ved å bruke en plastboks slik, kan bateriet være inne i boksen som den nederste delen.
-Nå har dronen et lavt center av masse. På grunn av boksen, hadde vi en flate oppå lokket som gjor det enkelt å montere elektronikken.
+Den originale planen var å bruke muttere og bolter til å holde rørene sammen,
+men etter at plastboksen ble en del av strukturen, var dronen solid nok til at det holdt med plastboksen og tek7 til å holde dronen sammen.
+Ved å bruke en plastboks slik, kan batteriet være inne i boksen som den nederste delen.
+Nå har dronen et lavt tyngdepunkt. På grunn av boksen, hadde vi en flate på toppen av lokket som gjorde det enkelt å montere elektronikken på toppen av dronen.
 Det ble kuttet en luke i enden av boksen der man enkelt kan ta batteriet inn og ut.
 Den ekstra plassen i boksen gir rom for fremtidige oppgraderinger til større batteri.
 
@@ -120,25 +120,46 @@ Det var planlagt å ha bein på dronen. Dette ble ikke nødvendig fordi boksen e
 Boksen er hard og kan derfor knuse. Siden løsningen med minst masse er å lande med boksen først, ble boksen utstyrt med dempende skum. Skummet er lett og mykt.
 
 ## Festing av motorer
-Designet hadde en utfordring. Motorenene er laget for å monteres på en flat overflate.
+Designet hadde en utfordring. Motorene er laget for å monteres på en flat overflate.
 Derfor måtte hver ende av armene skvises flat i enden, siden dette er rør.
 Disse områdene ble ikke riktig fordi motoren ikke pekte rett opp fra bakken.
 Om en av motorene peker litt annen retning enn de andre, vil dronen drifte bortover når man vil fly rett opp.
 Det første forsøket på å løse dette problemet var å henge motoren i en snor.
-Det går et lite hull i spissen på motoren med ukjent hensikt. Siden motoren er symetrisk, skulle den i teorien henge i vater,
-uansett hva man henger snoren i. Planen var å la det være en klump med tokomponent epoxy lim på hver av endene på armene til dronen.
-Deretter heise motoren forsiktig ned til den såvidt treffer limen. Da kan man forsterke med mer lim etterpå. Dette ble løst ved å bygge en manuel mini heisekran.
-Denne løsningen gikk ikke som planlagt. Tre tykke ledninger stakk ut fra motoren slik at den ikke hang beint. Det var ikke forutsatt.
+Det går et lite hull i spissen på motoren med ukjent hensikt. Siden motoren er symmetrisk, skulle den i teorien henge i vater,
+uansett hva man henger snoren i. Planen var å la det være en klump med to komponent epoxy lim på hver av endene på armene til dronen.
+Deretter heise motoren forsiktig ned til den såvidt treffer limen. Da kan man forsterke med mer lim etterpå. Dette ble løst ved å bygge en manuell mini heisekran.
+Denne løsningen gikk ikke som planlagt. Tre tykke ledninger stakk ut fra motoren slik at den ikke hang beint. Vi forutså ikke dette.
 
-Løsningen ble å plasere dronen på en vatret overflate.
-Deretter teipe flate plastbiter rund hver av endene på dronens armer.
-Da kunne limen flyte i vater mens plastbitene hindret limen i å renne ned fra armene.
-limen ble pusset slik at mer lim ville sitte bedre. Da var det flatt overflate og mulig å lime motorene fast oppå.
-Om løsningen var bra nok til at dronen flyr riktig gjenstår å se.
+![Heisekran](bilder/motorheis.jpg){width="50%"}
 
 \newpage
+For å gjøre dette, bygde vi en miniheisekran. Da ble det satt sammen en enkel firkantet treramme uten bunn og i bunnen ble det skudd fast to små planker til å holde kranen oppe.
+Kranen var kun improvisering og ingen mål ble tatt.
+Om kranen er skjev, vil fortsatt motoren henge beint.
+I midten på toppen av rammen ble det drillet et hull og ved siden av hullet ble det limt fast en servo.
+En servo er en elektrisk motor med girkasse.
+Knyttet tråden fast i servoen og trådde den gjennom hullet.
+Knyttet motoren til andre enden av tråden.
+Ved å vri på servoen kan man stille høyden til motoren.
+Servoen trenger ikke å styres med strøm.
+Hensikten med servoen var at man kan vri på den uten at den spinner tilbake når den møter litt motstand.
+
+Løsningen ble å plassere dronen på en vatret overflate.
+Deretter teipe flate plastbiter rund hver av endene på dronens armer.
+Da kunne limen flyte i vater mens plastbitene hindret limen i å renne ned fra armene.
+Limen ble pusset slik at mer lim ville sitte bedre. Da var det flatt overflate og mulig å lime motorene fast oppå.
+Om løsningen var bra nok til at dronen flyr riktig, gjenstår å se.
+
 ## Utstyr
 
+### Utstyr miniheisekran:
+- Treplanker, alt går
+- Servo(I dette tilfellet ble det brukt SG90 servo, men andre tilsvarende kan brukes.)
+- Tråd
+- Lim
+- Skruer
+
+\newpage
 ### Utstryr kontroll: ###
 - Arduino nano
 - 10µf kondensator
@@ -153,20 +174,14 @@ Om løsningen var bra nok til at dronen flyr riktig gjenstår å se.
 - loddebolt
 - loddetinn (med flussmiddel)
 - tre brytere ( en for å skru av og på kontrollen og to for å koble til kanaler).
-- 2 stk xbox joystick ( disse kommer gjerne loddet fast i et lite kreskort, da må det loddes av)
+- 2 stk xbox styrespak (disse kommer gjerne loddet fast i et lite kretskort, da må det loddes av)
 - pussemaskin
-- ståltråd eller aluminumstråd
-- tokomponent lim
+- ståltråd eller aluminiumstråd
+- to komponent lim
 - Mini b USB kabel
 - potensiometer
 
 \newpage
-### Utstyr miniheisekran:
-- Treplanker, alt går
-- Servo(I dette tilfellet ble det brukt SG90 servo, men andre tilsvarende kan brukes.)
-- Tråd
-- Lim
-- Skruer
 
 # Resultat
 Kontrollen fungerte som den skulle, inkludert alle kanalene, men etter litt testing kortsluttet den og sluttet å fungere.
@@ -195,25 +210,28 @@ Adafruit Pro Trinket mikrokontrolleren fungerte ikke,
 det er ingen tegn på hvorfor den ikke fungerte.
 
 \newpage
-Her er den så godt som ferdige dronen:
 
-![](bilder/ca-ferdig-drone.png)
+![Nesten ferdig drone](bilder/ca-ferdig-drone.png)
 
 # Diskusjon
-![](bilder/kost.png){width="50%"}
+![Kost og brett](bilder/kost.png){width="50%"}
 
-Avgjørelsen for mariale ble tatt etter oliver en vakker dag kostet gulvet.
-Han oppdaget at metallrøret som var igjen dersom man fjenet håndtak og børste veide svært lite og var sterkt.
+Avgjørelsen for materiale ble tatt etter at Oliver en vakker dag kostet gulvet.
+Han oppdaget at metallrøret som var igjen dersom man fjernet håndtak og børste veide svært lite og var sterkt.
 Da ble det funnet ut at metallet er magnetisk og må derfor være en type stål.
-Selv om plastik veier mindre, har det et lavere styrke til vekt forhold. Det vil si at man måtte brukt mer plastikk for å oppnå samme styrke.
-Veggene i stålrøret er ekstremt tynne og veier derfor mindre enn et tilsvarennde plastrør.
-Man kunne poteniselt brukt et annet design for å bygge en i plast som hadde veid mindre,
+Selv om plastikk veier mindre, har det et lavere styrke til vekt forhold. Det vil si at man måtte brukt mer plastikk for å oppnå samme styrke.
+Veggene i stålrøret er ekstremt tynne og veier derfor mindre enn et tilsvarende plastrør.
+Man kunne potensielt brukt et annet design for å bygge en i plast som hadde veid mindre,
 men da er man avhengig av å kunne forme plastikken selv. Karbonfiber ville være et bedre alternativ, men kostnaden er for høy.
-Til våres formål er det kun to joysticker og 4 kanaler vi trenger, men resten kan komme til nytte i et fremtidig prosjekt.
+Til våres formål er det kun to styrespaker og 4 kanaler vi trenger, men resten kan komme til nytte i et fremtidig prosjekt.
 
-Siden eksoskjellettet til dronen tåler ekstreme temperaturer så godt,
-kan det for eksempel brukes på olje-platformer og i arktiske strøk,
+Siden ekso-skjelettet til dronen tåler ekstreme temperaturer så godt,
+kan det for eksempel brukes på olje-plattformer og i arktiske strøk,
 men da må motorene byttes ut med noe som tåler de temperaturene.
+
+Mottakeren har 7 kanaler. Derfor kan to kanaler gå til 2 av/på brytere.
+4 kanaler kan gå til to små styrespaker og en kanal til et potensiometer. Dette er kun forskjellige metoder for å sende signaler til dronen.
+Potensiometeret er som en lysbryter med dimmer.
 
 Siden den andre mottakeren fungerte, bestemte vi oss for å bestille nye antenner og
 prøve på nytt når den tredje mottakeren ikke fungerte.
@@ -233,7 +251,7 @@ men uansett om dronen flyr eller ikke tar vi med oss mye nyttig kunnskap som kom
 
 # Konklusjon
 Dronen flyr ikke, og er derfor ikke sammenlignbar med en lignende produktkjøpt drone.
-Å bygge en drone selv gir likevell nyttig kunskap og erfaring og
+Å bygge en drone selv gir likevel nyttig kunnskap og erfaring og
 er et veldig gøy prosjekt hvis man ser etter en utfordring.
 
 \newpage
